@@ -63,7 +63,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
-	if(!pCBugging[playerid])
+	if(!pCBugging[playerid] && GetPlayerState(playerid) == PLAYER_STATE_ONFOOT)
 	{
 		if(PRESSED(KEY_FIRE))
 		{
