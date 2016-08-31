@@ -33,7 +33,7 @@
 
 // **** GENERAL
 
-new bool:pCBugging[MAX_PLAYERS] = false;
+new bool:pCBugging[MAX_PLAYERS];
 
 // **** TIMERS
 
