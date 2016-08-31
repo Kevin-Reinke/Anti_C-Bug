@@ -61,12 +61,6 @@ public OnPlayerDisconnect(playerid, reason)
 	return 1;
 }
 
-public OnPlayerSpawn(playerid)
-{
-	GivePlayerWeapon(playerid, WEAPON_DEAGLE, 500);
-	return 1;
-}
-
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
 	if(!pCBugging[playerid])
