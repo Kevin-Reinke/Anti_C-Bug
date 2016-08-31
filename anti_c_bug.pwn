@@ -89,10 +89,10 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 				pCBugging[playerid] = true;
 
+				GameTextForPlayer(playerid, "~r~~h~DON'T C-BUG!", 3000, 4);
+
 				KillTimer(ptmCBugFreezeOver[playerid]);
 				ptmCBugFreezeOver[playerid] = SetTimerEx("CBugFreezeOver", 1500, false, "i", playerid);
-
-				GameTextForPlayer(playerid, "~r~~h~DON'T C-BUG!", 3000, 4);
 			}
 		}
 	}
